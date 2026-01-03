@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "test": "vitest",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -17,7 +18,8 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^3.4.12",
+    "vitest": "^4.0.16"
   },
   "lint-staged": {
     "*.{js,css,html,md}": "prettier --write",
