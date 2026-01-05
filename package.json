@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
-    "test": "vitest",
-    "prepare": "husky install"
+    "test:unit": "vitest",
+    "test:e2e": "npx playwright test --ui",
+    "prepare": "husky install",
+    "start": "live-server --port=5500"
   },
   "keywords": [],
   "author": "",
